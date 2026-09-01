@@ -13,6 +13,6 @@
 - [x] ZIP ready
 - [x] SHA256 ready
 - [x] Final release smoke passed
-- [ ] User final approval pending
+- [x] User final publication approval received
 
 网络发布状态：未创建 GitHub Remote，未 Push，未上传 Release 资产。

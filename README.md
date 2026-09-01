@@ -1,8 +1,10 @@
-# EPUB Translator
+# EPUB翻译
 
 一个免费的 macOS EPUB 英译中工具。
 
 使用你自己的 Qwen 或 DeepSeek API，将英文 EPUB 翻译为简体中文，同时尽量保持原有章节、图片、链接和排版结构。
+
+## [下载 EPUB翻译 v1.0.0](../../releases/tag/v1.0.0)
 
 - 免费、无广告、无订阅
 - 无需注册 EPUB Translator 账号
@@ -10,7 +12,17 @@
 - API Key 仅保留在本次 App 运行的内存中，关闭 App 后自动清除
 - 没有 EPUB Translator 项目服务器
 
-![EPUB Translator 首页](screenshots/01-home.png)
+![EPUB翻译首页](screenshots/01-home.png)
+
+## 界面预览
+
+| API 管理 | 四种翻译模式 |
+| --- | --- |
+| ![API 管理](screenshots/02-api-manager.png) | ![四种翻译模式](screenshots/03-translation-styles.png) |
+
+| 翻译进度 | 翻译完成 |
+| --- | --- |
+| ![翻译进度](screenshots/04-progress.png) | ![翻译完成](screenshots/05-complete.png) |
 
 ## 功能
 
@@ -39,7 +51,7 @@
 
 ## 下载和安装
 
-正式发布后，请优先从 GitHub Releases 下载 `EPUB-Translator-v1.0.0.dmg`。完整步骤见 [安装说明](INSTALL.md)。
+请从 [GitHub Releases](../../releases/tag/v1.0.0) 优先下载 `EPUB-Translator-v1.0.0.dmg`。完整步骤见 [安装说明](INSTALL.md)。
 
 当前首发包使用本地签名，尚未经过 Apple Developer ID 公证。如果 macOS 阻止首次打开，请前往“系统设置 → 隐私与安全性”，找到 EPUB翻译并选择“仍要打开”。不需要关闭 Gatekeeper，也不需要运行 `sudo` 命令。
 
@@ -62,12 +74,14 @@ EPUB 文件结构在本机处理。翻译所需的文本片段及少量相邻上
 
 ## 当前限制
 
-- 仅支持 DRM-free EPUB，不支持 PDF。
-- 不移除 Kindle、Apple Books 或其他 DRM。
+- 仅支持 DRM-free EPUB，不支持 PDF、DOCX、MOBI 或 AZW。
+- 不移除 Kindle DRM、Apple FairPlay DRM、Adobe DRM 或其他 DRM。
 - 复杂 EPUB 的排版可能与原书存在差异。
 - AI 翻译质量、速度、可用性和费用取决于第三方服务商。
 - 当前“继续翻译”只在同一次 App 运行中有效；退出 App 后不会保留 API Key 或翻译进度。
-- 首个公开候选版本仅提供 Apple 芯片构建。
+- v1.0.0 不会永久保存 API Key；v1.0.1 计划加入 macOS Keychain 安全持久保存。
+- v1.0.0 仅提供 Apple 芯片构建。
+- 当前 Release 未做 Apple Developer ID 签名或 Apple 公证。
 
 ## 更多信息
 
@@ -76,4 +90,3 @@ EPUB 文件结构在本机处理。翻译所需的文本片段及少量相邻上
 - [获得支持](SUPPORT.md)
 - [更新记录](CHANGELOG.md)
 - [v1.0.0 发布说明](docs/RELEASE_NOTES_v1.0.0.md)
-

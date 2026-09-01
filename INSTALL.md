@@ -2,14 +2,14 @@
 
 ## 使用 DMG 安装（推荐）
 
-1. 从正式 GitHub Releases 页面下载 `EPUB-Translator-v1.0.0.dmg`。
+1. 从 [GitHub Releases](../../releases/tag/v1.0.0) 下载 `EPUB-Translator-v1.0.0.dmg`。
 2. 双击打开 DMG。
 3. 将“EPUB翻译.app”拖入 Finder 左侧的“应用程序”文件夹。
 4. 从“应用程序”中打开“EPUB翻译”。
 
 ## 第一次启动被 macOS 阻止
 
-首个公开候选版本尚未经过 Apple Developer ID 公证，因此 macOS 可能阻止第一次启动。
+v1.0.0 尚未经过 Apple Developer ID 签名或 Apple 公证，因此 macOS 可能阻止第一次启动。
 
 1. 尝试打开“EPUB翻译”。
 2. 打开“系统设置”。
@@ -34,3 +34,4 @@
 
 API Key 只保留在本次 App 运行的内存中。关闭 App 后，下次使用需要重新输入。
 
+v1.0.1 计划加入 macOS Keychain 安全持久保存；v1.0.0 当前没有此功能。
