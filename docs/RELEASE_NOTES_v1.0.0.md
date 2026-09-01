@@ -26,6 +26,8 @@
 
 此版本使用本地签名，未经过 Apple Developer ID 公证。如首次启动被拦截，请使用“系统设置 → 隐私与安全性 → 仍要打开”的 macOS 官方界面。
 
+完整步骤见 [安装说明](https://github.com/yyttwo/EPUB-Translator-Releases/blob/main/INSTALL.md)。
+
 ## 隐私提醒
 
 API Key 仅保留在本次 App 运行的内存中。翻译文本会直接发送至用户选择的 Qwen 或 DeepSeek；第三方服务商自己的隐私与收费政策适用。
