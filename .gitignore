@@ -1,0 +1,16 @@
+.DS_Store
+*.key
+*.pem
+*.p12
+*.mobileprovision
+.env
+logs/
+tmp/
+build/
+staging/
+*.dmg
+*.zip
+*.app
+*.epub
+*.log
+
