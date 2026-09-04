@@ -1,5 +1,25 @@
 # 更新记录
 
+## v1.0.1 — 2026-09-05
+
+- 更新翻译、API 管理、关于与帮助三个页面的视觉设计
+- API 管理支持输入、验证、重新验证、更换、删除和取消验证
+- API Key 仅在当前 App 运行期间保存在内存中；退出后清除，下次启动需重新输入
+- 增强错误提示、脱敏诊断复制和由用户主动打开的 GitHub Issues 反馈入口
+- 支持保存翻译进度，并在重新输入、验证 API Key 后继续未完成任务
+- 改进长文本及被截断响应的拆分处理，减少后段漏翻或异常停止
+- 纯网址、邮箱、文件名和编号等技术单元会原样保留，不再误判为漏翻
+- 保持 EPUB 封面、书内图片、内嵌 SVG、章节、链接和基本排版结构
+- 免费、无广告、无订阅；继续支持 Qwen、DeepSeek 与四种翻译模式
+
+### 已知限制
+
+- 仅支持 DRM-free EPUB，不支持 PDF、DOCX、MOBI、AZW 或 DRM 移除
+- 仅提供 Apple 芯片构建
+- 当前安装包未做 Apple Developer ID 签名或 Apple 公证
+- 复杂 EPUB 的视觉排版可能与原始文件存在细微差异
+- 翻译质量、速度、可用性和费用取决于用户选择的第三方 AI 服务
+
 ## v1.0.0 — 2026-09-01
 
 Initial public release.
@@ -16,7 +36,7 @@ Initial public release.
 
 ### 已知限制
 
-- 退出 App 后不会保留 API Key；v1.0.1 计划加入 macOS Keychain 安全持久保存
+- 退出 App 后不会保留 API Key
 - 仅支持 DRM-free EPUB，不支持 PDF、DOCX、MOBI、AZW 或 DRM 移除
 - 当前安装包未做 Apple Developer ID 签名或 Apple 公证
 - 复杂 EPUB 的视觉排版可能与原始文件存在细微差异

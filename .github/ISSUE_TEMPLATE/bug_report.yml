@@ -1,0 +1,77 @@
+name: Bug 报告
+description: 报告 EPUB翻译 的错误或兼容性问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请勿填写 API Key、Authorization/Bearer 内容、私人 EPUB、书籍正文、个人文件路径或未经检查的完整日志。
+  - type: input
+    id: app_version
+    attributes:
+      label: App 版本与 Build
+      description: 可在“关于与帮助”中查看，例如 1.0.1 (4)。
+      placeholder: 1.0.1 (4)
+    validations:
+      required: true
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS 版本
+      placeholder: 例如 macOS 15.6.1
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: AI 服务
+      options:
+        - Qwen
+        - DeepSeek
+        - 不适用
+    validations:
+      required: true
+  - type: dropdown
+    id: translation_style
+    attributes:
+      label: 翻译风格
+      options:
+        - 直译版
+        - 通畅版
+        - 意译（更简洁有力）
+        - 书面评论体
+        - 不适用
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: 发生了什么？
+      description: 请描述看到的用户提示和预期结果，不要粘贴书籍正文。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 选择 EPUB
+        2. 选择 AI 服务
+        3. 点击开始翻译
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 脱敏诊断信息
+      description: 可粘贴错误卡中复制的诊断信息。提交前请再次检查，严禁填写 API Key、私人路径或书籍内容。
+      render: text
+  - type: checkboxes
+    id: privacy_confirmation
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已确认本 Issue 不含 API Key、私人 EPUB、书籍正文、个人文件路径或未经检查的完整日志。
+          required: true

@@ -38,6 +38,5 @@ API Key 仅保留在本次 App 运行的内存中。翻译文本会直接发送�
 - 复杂 EPUB 可能存在排版差异。
 - 翻译质量和速度取决于第三方 AI 服务。
 - 退出 App 后不会保留 API Key 或翻译进度。
-- v1.0.1 计划加入 macOS Keychain API Key 安全持久保存。
 - v1.0.0 仅提供 Apple 芯片构建。
 - 目前没有 Apple Developer ID 签名或 Apple 公证。
