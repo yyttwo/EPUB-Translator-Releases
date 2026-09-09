@@ -84,6 +84,7 @@ API Key 仅在当前 App 运行期间使用，退出 App 后即清除。
 
 ## 更多信息
 
+- [源代码 / Source Code](https://github.com/yyttwo/EPUB-Translator)（Apache-2.0）
 - [隐私说明](PRIVACY.md)
 - [安全报告方式](SECURITY.md)
 - [获得支持](SUPPORT.md)
